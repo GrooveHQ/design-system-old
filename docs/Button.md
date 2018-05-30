@@ -1,4 +1,3 @@
-
 # Button
 
 Buttons make common actions immediately visible and easy to perform with one click or tap. They can be used for any type of action, including navigation.
@@ -9,11 +8,12 @@ Buttons make common actions immediately visible and easy to perform with one cli
 </Button>
 ```
 
-Prop | Type | Description
----|---|---
-radius | string | custom button radius in pixel
-size | string | sets button size to small, medium or large
-fullWidth | boolean | sets button width to fullWidth
+| Prop      | Type    | Description                                |
+| --------- | ------- | ------------------------------------------ |
+| radius    | string  | custom button radius in pixel              |
+| size      | string  | sets button size to small, medium or large |
+| fullWidth | boolean | sets button width to fullWidth             |
+| basic     | boolean | shows outlined button                      |
 
 ### Sizes
 
@@ -46,6 +46,12 @@ fullWidth | boolean | sets button width to fullWidth
 ```
 
 ### OutlineButton
+
+```.jsx
+<Button basic>
+  Hello
+</Button>
+```
 
 ```.jsx
 <OutlineButton>

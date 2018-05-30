@@ -68,6 +68,7 @@ Button.propTypes = {
   /** Size */
   size: PropTypes.oneOf(['small', 'medium', 'large']),
   fullWidth: PropTypes.bool,
+  theme: PropTypes.object,
   /** Margin */
   m: numberStringOrArray,
   mt: numberStringOrArray,

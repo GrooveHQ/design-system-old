@@ -6,7 +6,7 @@ const addAliases = (arr, aliases) =>
       enumerable: false,
       get() {
         return this[i]
-      }
+      },
     })
   )
 
@@ -21,22 +21,27 @@ addAliases(mediaQueries, aliases)
 
 export const space = [0, 4, 8, 16, 32, 64, 128]
 
-export const font = `'Montserrat','Helvetica Neue',Helvetica,Arial,sans-serif`
+export const fonts = {
+  sans: 'Groove-Roboto, sans-serif',
+  mono: 'Consolas,Menlo,"Liberation Mono",Courier,monospace',
+}
 
 export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
 
 export const regular = 400
+export const medium = 500
 export const bold = 600
 
 // styled-system's `fontWeight` function can hook into the `fontWeights` object
 export const fontWeights = {
   regular,
-  bold
+  medium,
+  bold,
 }
 
 const letterSpacings = {
   normal: 'normal',
-  caps: '0.025em'
+  caps: '0.025em',
 }
 
 // color palette
@@ -44,7 +49,7 @@ const black = '#000'
 const white = '#fff'
 const text = '#001833'
 const lightBlue = '#cdf'
-const blue = '#007aff' // primary
+const blue = '#4CC1FC' // primary
 const darkBlue = '#049'
 const lightGray = '#f6f8fa'
 const borderGray = '#d1d6db'
@@ -72,7 +77,7 @@ const flatten = (name, colors) =>
         get() {
           console.warn(
             `Groove Design System Warning: Using numbered colors like ${[
-              name + i
+              name + i,
             ]} will be deprecated in the next theme. Use light${name
               .charAt(0)
               .toUpperCase() + name.slice(1)}, ${name} or dark${name
@@ -80,8 +85,8 @@ const flatten = (name, colors) =>
               .toUpperCase() + name.slice(1)} instead.`
           )
           return b
-        }
-      }
+        },
+      },
     }
     return { ...a, ...color }
   }, {})
@@ -120,7 +125,7 @@ const colors = {
   greens,
   reds,
   oranges,
-  purples
+  purples,
 }
 
 Object.defineProperties(colors, {
@@ -129,14 +134,14 @@ Object.defineProperties(colors, {
   ...flatten('green', greens),
   ...flatten('red', reds),
   ...flatten('orange', oranges),
-  ...flatten('purple', purples)
+  ...flatten('purple', purples),
 })
 
 export { colors }
 
 // styled-system's `borderRadius` function can hook into the `radii` object/array
-export const radii = [0, 2, 6]
-export const radius = '2px'
+export const radii = [0, 2, 4]
+export const radius = '4px'
 
 export const maxContainerWidth = '1280px'
 
@@ -145,7 +150,7 @@ export const boxShadows = [
   `0 0 2px 0 rgba(0,0,0,.08),0 1px 4px 0 rgba(0,0,0,.16)`,
   `0 0 2px 0 rgba(0,0,0,.08),0 2px 8px 0 rgba(0,0,0,.16)`,
   `0 0 2px 0 rgba(0,0,0,.08),0 4px 16px 0 rgba(0,0,0,.16)`,
-  `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`
+  `0 0 2px 0 rgba(0,0,0,.08),0 8px 32px 0 rgba(0,0,0,.16)`,
 ]
 
 // animation duration
@@ -153,7 +158,7 @@ export const duration = {
   fast: `150ms`,
   normal: `300ms`,
   slow: `450ms`,
-  slowest: `600ms`
+  slowest: `600ms`,
 }
 
 // animation easing curves
@@ -164,7 +169,7 @@ const easeIn = 'cubic-bezier(0.5, 0, 1, 1)'
 const timingFunctions = {
   easeInOut,
   easeOut,
-  easeIn
+  easeIn,
 }
 
 // animation delay
@@ -172,14 +177,14 @@ const transitionDelays = {
   small: `60ms`,
   medium: `160ms`,
   large: `260ms`,
-  xLarge: `360ms`
+  xLarge: `360ms`,
 }
 
 const theme = {
   breakpoints,
   mediaQueries,
   space,
-  font,
+  fonts,
   fontSizes,
   fontWeights,
   letterSpacings,
@@ -192,7 +197,7 @@ const theme = {
   maxContainerWidth,
   duration,
   timingFunctions,
-  transitionDelays
+  transitionDelays,
 }
 
 export default theme
