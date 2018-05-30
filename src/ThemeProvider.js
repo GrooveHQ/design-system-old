@@ -2,12 +2,16 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled, {
   ThemeProvider as StyledThemeProvider,
-  injectGlobal
+  injectGlobal,
 } from 'styled-components'
 import nextTheme from './theme'
+import fonts from './fonts'
 import legacyTheme from './legacyTheme'
 
-injectGlobal`body {
+injectGlobal`
+${fonts}
+
+body {
   margin: 0;
 }`
 
@@ -25,7 +29,7 @@ const ThemeProvider = ({ legacy, customBreakpoints, ...props }) => {
   const breakpoints = customBreakpoints || baseTheme.breakpoints
   const theme = {
     ...baseTheme,
-    breakpoints
+    breakpoints,
   }
 
   return (
@@ -39,7 +43,7 @@ ThemeProvider.propTypes = {
   /** Enable legacy color palette */
   legacy: PropTypes.bool,
   /** Array of pixel values for custom breakpoint overrides */
-  customBreakpoints: PropTypes.arrayOf(PropTypes.number)
+  customBreakpoints: PropTypes.arrayOf(PropTypes.number),
 }
 
 export default ThemeProvider
