@@ -6,12 +6,12 @@ import 'react-chromatic/storybook-addon'
 
 injectGlobal([], {
   '*': {
-    boxSizing: 'border-box'
+    boxSizing: 'border-box',
   },
   body: {
     lineHeight: 1.5,
-    margin: 0
-  }
+    margin: 0,
+  },
 })
 
 addDecorator(story => (
@@ -20,7 +20,7 @@ addDecorator(story => (
   </ThemeProvider>
 ))
 
-const req = require.context('.', true, /\.js$/)
+const req = require.context('../stories', true, /\.js$/)
 
 const load = () => {
   req.keys().forEach(req)
