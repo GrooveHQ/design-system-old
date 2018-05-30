@@ -8,22 +8,22 @@ const size = props => {
     case 'small':
       return {
         fontSize: `${props.theme.fontSizes[0]}px`,
-        padding: '7px 12px'
+        padding: '7px 12px',
       }
     case 'medium':
       return {
         fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '9.5px 18px'
+        padding: '9.5px 18px',
       }
     case 'large':
       return {
         fontSize: `${props.theme.fontSizes[2]}px`,
-        padding: '12px 22px'
+        padding: '12px 22px',
       }
     default:
       return {
         fontSize: `${props.theme.fontSizes[1]}px`,
-        padding: '9.5px 18px'
+        padding: '9.5px 18px',
       }
   }
 }
@@ -37,7 +37,7 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: 600;
+  font-weight: ${props => props.theme.fonts.medium};
   line-height: 1.5;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};
@@ -61,7 +61,7 @@ const Button = styled.button`
 const numberStringOrArray = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.string,
-  PropTypes.array
+  PropTypes.array,
 ])
 
 Button.propTypes = {
@@ -84,11 +84,11 @@ Button.propTypes = {
   pb: numberStringOrArray,
   pl: numberStringOrArray,
   px: numberStringOrArray,
-  py: numberStringOrArray
+  py: numberStringOrArray,
 }
 
 Button.defaultProps = {
-  theme: theme
+  theme: theme,
 }
 
 Button.displayName = 'Button'

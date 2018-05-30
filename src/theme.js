@@ -19,14 +19,15 @@ const aliases = ['sm', 'md', 'lg', 'xl']
 addAliases(breakpoints, aliases)
 addAliases(mediaQueries, aliases)
 
-export const space = [0, 4, 8, 16, 32, 64, 128]
+// Spacing Scale (used for margin and padding)
+export const space = [0, 4, 8, 16, 32, 64, 128, 256, 512]
 
 export const fonts = {
   sans: 'Groove-Roboto, sans-serif',
   mono: 'Consolas,Menlo,"Liberation Mono",Courier,monospace',
 }
 
-export const fontSizes = [12, 14, 16, 20, 24, 32, 48]
+export const fontSizes = [11, 13, 15, 18, 20, 24, 32, 48, 72, 96]
 
 export const regular = 400
 export const medium = 500
@@ -47,20 +48,20 @@ const letterSpacings = {
 // color palette
 const black = '#000'
 const white = '#fff'
-const text = '#001833'
+const text = '#353F44'
 const lightBlue = '#cdf'
 const blue = '#4CC1FC' // primary
-const darkBlue = '#049'
+const darkBlue = '#44ADE2'
 const lightGray = '#f6f8fa'
-const borderGray = '#d1d6db'
+const borderGray = '#F1F4F8'
 const gray = '#687B8E' // primary
 const darkGray = '#364049'
 const lightGreen = '#cec'
 const green = '#0a0' // secondary
 const darkGreen = '#060'
 const lightRed = '#fcc'
-const red = '#c00' // secondary
-const darkRed = '#800'
+const red = '#DC5437' // secondary
+const darkRed = '#C64B31'
 const lightOrange = '#feb'
 const orange = '#fa0' // secondary
 const darkOrange = '#a50'
