@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import remark from 'remark'
 import remarkSlug from 'remark-slug'
 import remarkReact from 'remark-react'
 import { color, space, theme } from 'styled-system'
-import { Heading, Text, Link } from 'pcln-design-system'
+import { Heading, Text, Link } from 'groove-design-system'
 import detab from 'detab'
 import unist from 'unist-builder'
 

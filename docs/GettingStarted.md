@@ -4,7 +4,7 @@
 Install the Design System in your application
 
 ```sh
-npm install --save pcln-design-system
+npm install --save groove-design-system
 ```
 
 ### ThemeProvider
@@ -20,7 +20,7 @@ The ThemeProvider is a wrapper around styled-components' [ThemeProvider][sc-them
 
 ```jsx
 import React from 'react'
-import { ThemeProvider } from 'pcln-design-system'
+import { ThemeProvider } from 'groove-design-system'
 import SomeView from './SomeView'
 
 class App extends React.Component {
@@ -36,7 +36,7 @@ class App extends React.Component {
 
 ```jsx
 // Example usage with styled-components
-import styled from 'styled-components'
+import styled from 'react-emotion'
 
 const Section = styled.section`
   background-color: ${props => props.theme.blue};
@@ -51,7 +51,7 @@ With effective use of the UI primitives, you can reduce the need to write custom
 
 ```jsx
 import React from 'react'
-import { Box, Text } from 'pcln-design-system'
+import { Box, Text } from 'groove-design-system'
 
 const SomeView = props => (
   <Box p={3}>

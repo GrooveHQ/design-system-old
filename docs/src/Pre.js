@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import { space, color, borderRadius, propsTypes } from 'styled-system'
 
 const Pre = styled.pre`

@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-import * as P1 from 'pcln-design-system'
+import styled from 'react-emotion'
+import * as P1 from 'groove-design-system'
 import { LiveProvider, LivePreview, LiveEditor, LiveError } from 'react-live'
 import { color, space, borderRadius, theme } from 'styled-system'
 import Catch from './Catch'

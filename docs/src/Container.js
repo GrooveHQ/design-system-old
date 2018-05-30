@@ -1,5 +1,5 @@
-import styled from 'styled-components'
-import { Container } from 'pcln-design-system'
+import styled from 'react-emotion'
+import { Container } from 'groove-design-system'
 import { space, width } from 'styled-system'
 
 const DocsContainer = Container.extend`

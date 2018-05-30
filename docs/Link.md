@@ -5,6 +5,6 @@ Use the `<Link />` component to set the HTML `<a>` element (or anchor element) t
 
 ```.jsx
 <Link href='https://www.priceline.com/home/' target='_blank'>
-  Priceline Home
+  Groove Home
 </Link>
 ```

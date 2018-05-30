@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import {
   Box,
   Card,
@@ -8,7 +8,7 @@ import {
   Text,
   Divider,
   theme
-} from 'pcln-design-system'
+} from 'groove-design-system'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'

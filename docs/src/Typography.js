@@ -6,7 +6,7 @@ import {
   Truncate,
   Divider,
   theme
-} from 'pcln-design-system'
+} from 'groove-design-system'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Pagination from './Pagination'

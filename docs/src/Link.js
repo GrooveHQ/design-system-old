@@ -1,5 +1,5 @@
 import React from 'react'
-import * as DS from 'pcln-design-system'
+import * as DS from 'groove-design-system'
 import { Link as RouterLink } from 'react-router-dom'
 
 const Link = DS.Link.withComponent(RouterLink)

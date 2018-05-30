@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import { NavLink } from 'react-router-dom'
 import { space, color, theme } from 'styled-system'
 

@@ -71,7 +71,7 @@ const flatten = (name, colors) =>
         enumerable: true,
         get() {
           console.warn(
-            `Priceline Design System Warning: Using numbered colors like ${[
+            `Groove Design System Warning: Using numbered colors like ${[
               name + i
             ]} will be deprecated in the next theme. Use light${name
               .charAt(0)

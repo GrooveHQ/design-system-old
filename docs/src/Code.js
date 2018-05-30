@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import { color, fontSize } from 'styled-system'
 
 const Code = styled.code`

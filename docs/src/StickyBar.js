@@ -1,7 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import { theme } from 'styled-system'
-import { Box } from 'pcln-design-system'
+import { Box } from 'groove-design-system'
 
 class Root extends React.Component {
   componentWillReceiveProps(next) {

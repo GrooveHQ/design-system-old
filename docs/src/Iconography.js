@@ -7,8 +7,8 @@ import {
   Icon,
   Divider,
   theme
-} from 'pcln-design-system'
-import icons from 'pcln-design-system/icons.json'
+} from 'groove-design-system'
+import icons from 'groove-design-system/icons.json'
 import PageTitle from './PageTitle'
 import Description from './Description'
 import Code from './Code'

@@ -8,7 +8,7 @@ import {
   Icon,
   Text,
   colors
-} from 'pcln-design-system'
+} from 'groove-design-system'
 import Link from './Link'
 
 const Pagination = ({ index, pages }) => {

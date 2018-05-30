@@ -12,7 +12,7 @@ import {
   Button,
   Image,
   theme
-} from 'pcln-design-system'
+} from 'groove-design-system'
 import Loadable from 'react-loadable'
 
 import Container from './Container'
@@ -70,7 +70,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <head>
-          <title key="title">Priceline One Design System</title>
+          <title key="title">Groove Design System</title>
           <meta name="viewport" content="width=device-width,initial-scale=1" />
           <link
             key="webfont"
@@ -140,7 +140,7 @@ class App extends React.Component {
                     </Box>
                   ))}
                   <NavItem
-                    href="https://github.com/pricelinelabs/design-system"
+                    href="https://github.com/groovehq/design-system"
                     mb={4}
                   >
                     GitHub
@@ -274,7 +274,7 @@ App.getInitialProps = async props => {
   const fs = require('fs')
   const path = require('path')
   const matter = require('gray-matter')
-  const { ServerStyleSheet } = require('styled-components')
+  const { ServerStyleSheet } = require('emotion')
   const pkg = require('../../package.json')
 
   const content = fs

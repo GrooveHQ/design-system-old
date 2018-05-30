@@ -47,7 +47,7 @@ Let’s have some fun with it! There are a million opportunities to add enjoyabl
 <img src="https://media.giphy.com/media/9Vx2KxaxT5PKDEAviN/giphy.gif" width="200" height="200" />
 
 ## Standards
-To behave in that uniquely Priceline-y way, we need to adhere to a set of standards upon which we shall build our formula for animation.
+To behave in that uniquely Groove-y way, we need to adhere to a set of standards upon which we shall build our formula for animation.
 ### Short & Sweet
 Animations should be executed quickly, but deliver their important benefit in a short period of time.
 ### Decisive & with Purpose
@@ -218,7 +218,7 @@ Used in animations involving the largest components
 <img src="https://media.giphy.com/media/7J1lqx4jzQnmRq7N7y/giphy.gif" width="200" height="200" />
 
 ## Patterns
-These patterns help paint the picture of our product to the user. Proper execution and repetition of these elements will create a uniquely branded behavior for Priceline.
+These patterns help paint the picture of our product to the user. Proper execution and repetition of these elements will create a uniquely branded behavior for Groove.
 
 ### Determinate Load
 The determinate loader is used in instances when load time can be determined.

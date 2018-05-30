@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled from 'react-emotion'
 import {
   Flex,
   Box,
@@ -10,7 +10,7 @@ import {
   Button,
   Divider,
   Icon
-} from 'pcln-design-system'
+} from 'groove-design-system'
 import PageTitle from './PageTitle'
 import Pre from './Pre'
 import Markdown from './Markdown'
@@ -25,7 +25,7 @@ const Landing = props => {
   return (
     <Box>
       <Container>
-        <PageTitle>Priceline One</PageTitle>
+        <PageTitle>Groove </PageTitle>
         <Description>{props.pkg.description}</Description>
         <Text fontSize={1} color="gray">
           v{props.pkg && props.pkg.version}
@@ -38,11 +38,11 @@ const Landing = props => {
               lineHeight: '16px'
             }}
           >
-            npm install pcln-design-system
+            npm install groove-design-system
           </Pre>
           <Button.a
             size="large"
-            href="https://github.com/pricelinelabs/design-system-sketch/releases/latest"
+            href="https://github.com/groovehq/design-system-sketch/releases/latest"
           >
             Download Sketch Kit
           </Button.a>
