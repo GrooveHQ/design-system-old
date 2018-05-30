@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import PropTypes from 'prop-types'
 import { space } from 'styled-system'
 import theme from './theme'
+import { th } from './util'
 
 const size = props => {
   switch (props.size) {
@@ -37,7 +38,7 @@ const Button = styled.button`
   text-align: center;
   text-decoration: none;
   font-family: inherit;
-  font-weight: ${props => props.theme.fonts.medium};
+  font-weight: ${th('fontWeights.medium', '500')};
   line-height: 1.5;
   cursor: pointer;
   border-radius: ${props => props.theme.radius};

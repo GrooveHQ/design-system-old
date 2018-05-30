@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components'
 import PropTypes from 'prop-types'
 import theme from './theme'
-import { Icon, Box } from '..'
+import { Icon, Box } from './'
 
 const Checkbox = props => {
   const { disabled, size } = props
@@ -58,14 +58,14 @@ Checkbox.propTypes = {
   defaultChecked: PropTypes.bool,
   disabled: PropTypes.bool,
   onChange: PropTypes.func.isRequired,
-  theme: PropTypes.object
+  theme: PropTypes.object,
 }
 
 Checkbox.defaultProps = {
   size: 20,
   disabled: false,
   defaultChecked: false,
-  theme: theme
+  theme: theme,
 }
 
 export default Checkbox
